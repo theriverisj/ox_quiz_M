@@ -31,7 +31,7 @@ st.set_page_config(
 st.title("📱 류채각 OX 퀴즈")
 
 # 엑셀 불러오기
-df = pd.read_excel("wk2_quiz.xlsx")
+df = pd.read_excel("wk2_quiz_m.xlsx")
 
 num_col = df.columns[0]
 question_col = df.columns[1]
@@ -130,5 +130,6 @@ else:
             st.session_state.index += 1
             st.session_state.answered = False
             st.session_state.correct = None
+
 
             st.rerun()
