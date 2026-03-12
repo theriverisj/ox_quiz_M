@@ -88,7 +88,7 @@ else:
     answer = str(row[answer_col]).strip().upper()
 
     st.markdown(
-    f"<p style='font-size:20px; font-weight:600; text-align:center;'>{question}</p>",
+    f"<p style='font-size:20px; font-weight:600; text-align:left;'>{question}</p>",
     unsafe_allow_html=True
 )
 
@@ -133,4 +133,5 @@ else:
 
 
             st.rerun()
+
 
